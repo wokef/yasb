@@ -147,10 +147,14 @@
   color: var(--fg-disabled);
 }
 
+.home-widget .icon,
+.power-menu-widget .label {
+  font-size: 21px;
+  padding-right: var(--padding05);
+}
+
 .power-menu-widget .label {
   color: var(--icon-hover);
-  font-size: 21px;
-  padding-right: 2px;
 }
 
 .power-menu-popup {
@@ -240,7 +244,6 @@
   color: var(--surface2);
 }
 
-.home-widget .icon,
 .wifi-widget .icon {
   padding-right: var(--padding05);
 }
