@@ -8,11 +8,12 @@
   --icon-hover: '#dc386a';
   --icon-warning: '#e6c62f';
   --separator: '#495162';
-  --padding: '0.5em';
+  --padding: '0.4em';
   --border-radius: '0.4em';
 
   /* --font: 'Ubuntu Nerd Font'; */
-  --font: 'UbuntuMono Nerd Font';
+  /* --font: 'UbuntuMono Nerd Font'; */
+  --font: 'JetBrainsMono NF';
   --win-font: 'Segoe UI';
   --win-icon-font: 'Segoe Fluent Icons';
 }
@@ -20,7 +21,7 @@
 * {
   color: var(--fg);
   font-family: var(--font);
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
 }
