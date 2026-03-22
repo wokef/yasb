@@ -26,7 +26,6 @@
 }
 
 .yasb-bar {
-  border-radius: var(--border-radius);
   padding: 0 var(--padding);
   margin: 0;
   background-color: var(--bg);
