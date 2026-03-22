@@ -1,5 +1,5 @@
 :root {
-  --bg: rgba(1, 22, 40, 150);
+  --bg: rgba(1, 22, 40, 190);
   --bg-hover: '#143652';
   --fg: '#f1f1f1';
   --fg-hover: '#ffffff';
@@ -32,7 +32,7 @@
 }
 
 .yasb-bar {
-  /* padding: 0 var(--padding); */
+  padding: 0 var(--padding);
   font-size: 100%;
   margin: 0;
   background-color: var(--bg);
@@ -123,9 +123,10 @@
 }
 
 .widget {
-  padding: var(--padding) var(--padding2);
-  margin: var(--margin);
-  background-color: var(--bg);
+  /* padding: var(--padding) var(--padding2); */
+  padding: 0 var(--padding2);
+  /* margin: var(--margin); */
+  /* background-color: var(--bg); */
   border-radius: var(--border-radius);
 }
 
