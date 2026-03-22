@@ -250,7 +250,7 @@ widgets:
       monitor_exclusive: false
       hide_empty: true
       animation:
-        enabled: true
+        enabled: false
       preview:
         enabled: true
         width: 240
