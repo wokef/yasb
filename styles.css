@@ -127,7 +127,7 @@
 }
 
 .windows-desktops .ws-btn {
-  padding: 0.22em var(--padding);
+  padding: 0.12em var(--padding);
   border-radius: var(--border-radius);
   border: none;
 }
