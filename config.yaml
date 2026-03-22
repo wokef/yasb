@@ -57,7 +57,7 @@ bars:
         - 'battery'
         - 'notifications'
         - 'language'
-        - 'power_menu'
+        # - 'power_menu'
 widgets:
   home:
     type: 'yasb.home.HomeWidget'
