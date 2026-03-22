@@ -1,5 +1,5 @@
 :root {
-  --bg: rgba(1, 22, 40, 160);
+  --bg: rgba(1, 22, 40, 100);
   --bg-hover: '#143652';
   --fg: '#f1f1f1';
   --fg-hover: '#ffffff';
@@ -8,7 +8,11 @@
   --icon-hover: '#dc386a';
   --icon-warning: '#e6c62f';
   --separator: '#495162';
+  --margin05: '0em';
+  --margin: '0.4em';
+  --padding05: '0.2em';
   --padding: '0.4em';
+  --padding2: '0.8em';
   --border-radius: '0.4em';
 
   /* --font: 'Ubuntu Nerd Font'; */
@@ -38,7 +42,7 @@
   border-radius: var(--border-radius);
   padding: var(--padding);
   font-family: var(--win-font);
-  margin-top: var(--padding);
+  margin-top: var(--margin);
 }
 
 .context-menu,
@@ -117,13 +121,14 @@
 }
 
 .widget {
-  padding: 0 var(--padding);
-  margin: 0;
+  padding: var(--padding) var(--padding2);
+  margin: var(--margin);
+  background-color: var(--bg);
+  border-radius: var(--border-radius);
 }
 
 .icon {
   color: var(--icon);
-  padding-right: var(--padding);
 }
 
 .windows-desktops .ws-btn {
@@ -137,16 +142,14 @@
   color: var(--separator);
 }
 
-.active-window-widget .label {
-}
-
 .clock-widget .label {
   color: var(--fg-disabled);
 }
 
 .power-menu-widget .label {
   color: var(--icon-hover);
-  font-size: 20px;
+  font-size: 21px;
+  padding-right: 2px;
 }
 
 .power-menu-popup {
@@ -170,19 +173,29 @@
   background-color: var(--icon);
 }
 
+.power-menu-popup .button.hover.cancel {
+  background-color: var(--icon-hover);
+}
+
 .power-menu-popup .button .label {
   font-family: var(--win-font);
+  padding: 0;
 }
 
 .power-menu-popup .button .icon {
   font-size: 26px;
-  padding: 0.3em;
+  padding: 0;
   color: var(--fg-disabled);
 }
 
 .power-menu-popup .button.hover .label,
 .power-menu-popup .button.hover .icon {
   color: var(--bg);
+}
+
+.power-menu-popup .button.hover.cancel .label,
+.power-menu-popup .button.hover.cancel .icon {
+  color: var(--fg);
 }
 
 .power-menu-popup .profile-info {
@@ -193,11 +206,24 @@
   color: var(--fg);
 }
 
+.power-menu-popup .profile-info .profile-account-type,
+.power-menu-popup .profile-info .profile-email,
+.power-menu-popup .profile-info .profile-username {
+  margin-top: 0;
+  font-family: var(--win-font);
+}
+
 .power-menu-popup .profile-info .profile-username {
   font-size: 24px;
   font-weight: 600;
-  margin-top: 0;
-  font-family: var(--win-font);
+}
+
+.power-menu-popup .profile-info .profile-account-type {
+  color: var(--fg-disabled);
+}
+
+.power-menu-popup .profile-info .profile-email {
+  color: var(--icon-warning);
 }
 
 .power-menu-overlay .uptime {
@@ -213,9 +239,14 @@
   color: var(--surface2);
 }
 
-.home-widget .icon {
+.home-widget .icon,
+.wifi-widget .icon {
+  padding-right: var(--padding05);
+}
+
+.active-window-widget .icon,
+.battery-widget .icon {
   padding-right: var(--padding);
-  color: var(--icon);
 }
 
 .home-widget .icon:hover {
@@ -278,7 +309,7 @@
   color: var(--fg-hover);
   border-radius: var(--border-radius);
   background-color: var(--icon-hover);
-  padding: 0.2em var(--padding);
+  padding: var(--padding05) var(--padding);
 }
 
 .media-menu .btn {
