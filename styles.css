@@ -1,5 +1,5 @@
 :root {
-  --bg: rgba(1, 22, 40, 100);
+  --bg: rgba(1, 22, 40, 150);
   --bg-hover: '#143652';
   --fg: '#f1f1f1';
   --fg-hover: '#ffffff';
@@ -10,6 +10,7 @@
   --separator: '#495162';
   --margin05: '0em';
   --margin: '0.4em';
+  --margin2: '0.8em';
   --padding05: '0.2em';
   --padding: '0.4em';
   --padding2: '0.8em';
@@ -31,7 +32,7 @@
 }
 
 .yasb-bar {
-  padding: 0 var(--padding);
+  /* padding: 0 var(--padding); */
   margin: 0;
   background-color: var(--bg);
 }
@@ -244,6 +245,7 @@
   padding-right: var(--padding05);
 }
 
+.notification-widget .icon,
 .active-window-widget .icon,
 .battery-widget .icon {
   padding-right: var(--padding);
@@ -259,7 +261,7 @@
 }
 
 .home-menu .menu-item {
-  padding: var(--padding);
+  padding: var(--padding) var(--padding2);
   font-family: var(--win-font);
   color: var(--white);
 }
@@ -337,7 +339,7 @@
 .taskbar-preview {
   margin-top: var(--margin);
   border-radius: var(--border-radius);
-  background-color: var(--bg-hover);
+  background-color: var(--bg);
 }
 .taskbar-preview .header {
   padding-bottom: var(--padding);
