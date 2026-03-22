@@ -14,7 +14,7 @@
   --padding05: '0.2em';
   --padding: '0.4em';
   --padding15: '0.5em';
-  --padding2: '0.8em';
+  --padding2: '0.7em';
   --border-radius: '0.4em';
 
   /* --font: 'Ubuntu Nerd Font'; */
@@ -378,8 +378,6 @@
 
 .apps-widget .widget-container .label {
   color: var(--icon);
-  padding: var(--padding) var(--padding15);
+  padding: var(--padding) var(--padding);
   margin: 0 var(--margin);
-  background-color: var(--bg);
-  border-radius: var(--border-radius);
 }
