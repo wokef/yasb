@@ -330,3 +330,30 @@
 .media-menu .thumbnail {
   margin-bottom: var(--padding);
 }
+
+.taskbar-widget .app-container {
+  padding: 0 var(--padding);
+}
+.taskbar-preview {
+  margin-top: var(--margin);
+  border-radius: var(--border-radius);
+  background-color: var(--bg-hover);
+}
+.taskbar-preview .header {
+  padding-bottom: var(--padding);
+  padding-top: var(--padding);
+}
+.taskbar-preview .header .title {
+  color: vat(--fg);
+}
+.taskbar-preview .close-button {
+  background-color: transparent;
+  border: none;
+  border-radius: var(--border-radius);
+  min-width: 20px;
+  min-height: 20px;
+}
+.taskbar-preview .close-button:hover {
+  color: var(--fg-hover);
+  background-color: var(--icon-hover);
+}

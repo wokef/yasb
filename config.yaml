@@ -42,7 +42,8 @@ bars:
       left:
         - 'home'
         - 'windows_desktops'
-        - 'active_window'
+        # - 'active_window'
+        - 'taskbar'
         # - 'systray'
       center:
         - 'clock'
@@ -239,6 +240,25 @@ widgets:
         color: 'black'
         radius: 3
         offset: [1, 1]
+  taskbar:
+    type: 'yasb.taskbar.TaskbarWidget'
+    options:
+      icon_size: 16
+      tooltip: false
+      show_only_visible: true
+      strict_filtering: true
+      monitor_exclusive: false
+      hide_empty: true
+      animation:
+        enabled: true
+      preview:
+        enabled: true
+        width: 240
+        delay: 400
+        padding: 8
+        margin: 8
+      title_label:
+        enabled: false
   # systray:
   #   type: 'yasb.systray.SystrayWidget'
   #   options:
