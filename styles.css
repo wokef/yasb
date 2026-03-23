@@ -26,13 +26,13 @@
 * {
   color: var(--fg);
   font-family: var(--font);
-  font-size: 14px;
   margin: 0;
   padding: 0;
 }
 
 .yasb-bar {
   /* padding: 0 var(--padding); */
+  font-size: 100%;
   margin: 0;
   background-color: var(--bg);
 }
@@ -57,8 +57,8 @@
 
 .context-menu::item:disabled {
   margin: 0;
-  font-size: 13px;
-  line-height: 10px;
+  font-size: 90%;
+  line-height: 90%;
   font-weight: 700;
   color: var(--fg-disabled);
   padding-top: 0;
@@ -149,7 +149,7 @@
 
 .home-widget .icon,
 .power-menu-widget .label {
-  font-size: 21px;
+  font-size: 22px;
   padding-right: var(--padding05);
 }
 
