@@ -46,6 +46,7 @@ bars:
         # - 'taskbar'
         # - 'systray'
       center:
+        - 'notifications'
         - 'clock'
         - 'media'
       right:
@@ -55,7 +56,6 @@ bars:
         - 'bluetooth'
         - 'wifi'
         - 'battery'
-        - 'notifications'
         - 'language'
         - 'power_menu'
 widgets:
