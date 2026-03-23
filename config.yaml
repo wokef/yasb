@@ -40,10 +40,10 @@ bars:
       right: 0
     widgets:
       left:
-        - 'home'
+        # - 'home'
         - 'windows_desktops'
-        # - 'active_window'
-        - 'taskbar'
+        - 'active_window'
+        # - 'taskbar'
         # - 'systray'
       center:
         - 'clock'
@@ -57,7 +57,7 @@ bars:
         - 'battery'
         - 'notifications'
         - 'language'
-        # - 'power_menu'
+        - 'power_menu'
 widgets:
   home:
     type: 'yasb.home.HomeWidget'
