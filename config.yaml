@@ -40,11 +40,8 @@ bars:
       right: 0
     widgets:
       left:
-        # - 'home'
         - 'windows_desktops'
         - 'active_window'
-        # - 'taskbar'
-        # - 'systray'
       center:
         - 'notifications'
         - 'clock'
@@ -94,7 +91,7 @@ widgets:
       label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
       label_icon: true
       label_icon_size: 16
-      max_length: 250
+      max_length: 60
       max_length_ellipsis: '...'
       monitor_exclusive: true
   clock:
@@ -259,24 +256,3 @@ widgets:
         margin: 8
       title_label:
         enabled: false
-  # systray:
-  #   type: 'yasb.systray.SystrayWidget'
-  #   options:
-  #     class_name: 'systray'
-  #     label_collapsed: '▼'
-  #     label_expanded: '▶'
-  #     label_position: 'left' # Can be "left" or "right"
-  #     icon_size: 16 # Can be any integer between 8 and 64
-  #     pin_click_modifier: 'alt' # Can be "ctrl", "alt" or "shift"
-  #     show_unpinned: true
-  #     show_unpinned_button: true
-  #     show_battery: false
-  #     show_volume: false
-  #     show_network: false
-  #     use_hook: false # Whether to use the new systray hook instead of the legacy systray monitor
-  #     hide_icons: [] # Optional, list of process names to hide (e.g. ["discord"])
-  #     btn_shadow:
-  #       enabled: true
-  #       color: 'black'
-  #       radius: 3
-  #       offset: [1, 1]
