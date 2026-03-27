@@ -112,7 +112,7 @@ widgets:
     type: 'yasb.volume.VolumeWidget'
     options:
       label: '<span>{icon}</span>'
-      label_alt: '<span>{icon}</span> {level}'
+      label_alt: '<span class="icon pdr">{icon}</span> {level}'
       tooltip: true
       volume_icons:
         - ' '
@@ -178,8 +178,8 @@ widgets:
   battery:
     type: yasb.battery.BatteryWidget
     options:
-      label: '<span>{icon}</span> {percent}'
-      label_alt: '<span>{icon}</span> {percent}% | {power}W | {time_remaining}'
+      label: '<span>{icon}</span>{percent}'
+      label_alt: '<span>{icon}</span>{percent} | {power} | {time_remaining}'
     charging_options:
       icon_format: '{charging_icon}'
       blink_charging_icon: true
@@ -187,10 +187,10 @@ widgets:
   wifi:
     type: yasb.wifi.WifiWidget
     options:
-      label: '<span>{wifi_icon}</span> {wifi_name} {wifi_strength}%'
+      label: '<span class="icon pdr">{wifi_icon}</span>{wifi_name} {wifi_strength}%'
       label_alt: '<span>{wifi_icon}</span>'
       ethernet_label: '<span>{wifi_icon}</span>'
-      ethernet_label_alt: '<span>{wifi_icon}</span>{ip_addr}'
+      ethernet_label_alt: '<span class="icon pdr">{wifi_icon}</span>{ip_addr}'
       wifi_icons:
         - '󰤯  '
         - '󰤟  '
@@ -203,9 +203,9 @@ widgets:
   bluetooth:
     type: yasb.bluetooth.BluetoothWidget
     options:
-      label: '<span>{icon}</span> {device_name}'
-      label_alt: '<span>{icon}</span>'
-      label_no_device: ''
+      label: '<span>{icon}</span>'
+      label_alt: '<span class="icon pdr">{icon}</span>{device_name}'
+      label_no_device: 'No device'
       icons:
         bluetooth_on: ''
         bluetooth_off: '󰂲'
@@ -226,7 +226,7 @@ widgets:
     type: 'yasb.recycle_bin.RecycleBinWidget'
     options:
       label: '<span>{icon}</span>'
-      label_alt: '<span>{icon}</span> Items {items_count}, Total size ({items_size})'
+      label_alt: '<span class="icon pdr">{icon}</span> Items {items_count}, Total size ({items_size})'
       icons:
         bin_empty: ''
         bin_filled: ''

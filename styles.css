@@ -248,10 +248,11 @@
   padding-right: var(--padding05);
 }
 
-.bluetooth-widget .icon,
-.notification-widget .icon,
-.active-window-widget .icon,
 .battery-widget .icon {
+  padding-right: var(--padding2);
+}
+
+.icon.pdr {
   padding-right: var(--padding);
 }
 
