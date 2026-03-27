@@ -197,6 +197,9 @@ widgets:
         - '󰤢  '
         - '󰤥  '
         - '󰤨  '
+      callbacks:
+        on_left: 'exec cmd.exe /c start ms-settings:network-wifi'
+        on_right: 'toggle_label'
   bluetooth:
     type: yasb.bluetooth.BluetoothWidget
     options:
