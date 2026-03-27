@@ -97,7 +97,8 @@ widgets:
   clock:
     type: 'yasb.clock.ClockWidget'
     options:
-      label: '{%a, %d | %H:%M:%S}'
+      label: '{%a, %d | %H:%M}'
+      label_alt: '{%a, %d | %H:%M:%S}'
       locale: 'it'
       update_interval: 1000
       calendar:
@@ -106,7 +107,7 @@ widgets:
         alignment: 'center'
         direction: 'down'
       callbacks:
-        on_left: 'do_nothing'
+        on_left: 'toggle_label'
         on_right: 'do_nothing'
   volume:
     type: 'yasb.volume.VolumeWidget'
