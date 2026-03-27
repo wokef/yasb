@@ -47,6 +47,7 @@ bars:
         - 'clock'
         - 'media'
       right:
+        - 'apps'
         - 'bin'
         - 'microphone'
         - 'volume'
@@ -260,3 +261,13 @@ widgets:
         margin: 8
       title_label:
         enabled: false
+  apps:
+    type: 'yasb.applications.ApplicationsWidget'
+    options:
+      label: '{data}'
+      app_list:
+        - {
+            icon: '',
+            launch: 'start %windir%\explorer.exe "$env:WSL_HOME_PATH"',
+            name: 'WSL ~',
+          }
