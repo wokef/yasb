@@ -8,8 +8,10 @@
   --icon-hover: '#dc386a';
   --icon-warning: '#e6c62f';
   --separator: '#495162';
+  --separator-light: '#8c95a7';
   --margin05: '0em';
   --margin: '0.4em';
+  --margin15: '0.6em';
   --margin2: '0.8em';
   --padding05: '0.2em';
   --padding: '0.4em';
@@ -373,11 +375,13 @@
 .apps-widget {
   background-color: transparent;
   padding: 0;
-  margin: var(--margin) 0;
+  margin: var(--margin15) var(--margin);
+  border-radius: none;
+  border-right: 1px solid var(--separator-light);
 }
 
 .apps-widget .widget-container .label {
   color: var(--icon);
-  padding: var(--padding) var(--padding);
+  padding: 0 var(--padding);
   margin: 0 var(--margin);
 }
