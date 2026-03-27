@@ -246,7 +246,7 @@
 }
 
 .wifi-widget .icon {
-  padding-right: var(--padding05);
+  letter-spacing: -1px;
 }
 
 .battery-widget .icon {

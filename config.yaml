@@ -193,11 +193,11 @@ widgets:
       ethernet_label: '<span>{wifi_icon}</span>'
       ethernet_label_alt: '<span class="icon pdr">{wifi_icon}</span>{ip_addr}'
       wifi_icons:
-        - '󰤯  '
-        - '󰤟  '
-        - '󰤢  '
-        - '󰤥  '
-        - '󰤨  '
+        - '󰤯 '
+        - '󰤟 '
+        - '󰤢 '
+        - '󰤥 '
+        - '󰤨 '
       callbacks:
         on_left: 'exec cmd.exe /c start ms-settings:network-wifi'
         on_right: 'toggle_label'
