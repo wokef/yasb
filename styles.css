@@ -147,6 +147,7 @@
   color: var(--fg-disabled);
 }
 
+.active-window-widget .icon,
 .home-widget .icon,
 .power-menu-widget .label {
   font-size: 22px;
@@ -252,6 +253,7 @@
   padding-right: var(--padding2);
 }
 
+.notification-widget .icon,
 .icon.pdr {
   padding-right: var(--padding);
 }

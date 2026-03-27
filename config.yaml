@@ -156,7 +156,7 @@ widgets:
   notifications:
     type: 'yasb.notifications.NotificationsWidget'
     options:
-      label: '<span> </span> {count}'
+      label: '<span> </span>{count}'
       label_alt: '<span> </span>{count} notifications'
       hide_empty: true
       tooltip: true
