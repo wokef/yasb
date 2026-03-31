@@ -108,8 +108,8 @@ widgets:
         alignment: 'center'
         direction: 'down'
       callbacks:
-        on_left: 'toggle_label'
-        on_right: 'do_nothing'
+        on_right: 'toggle_label'
+        on_left: 'do_nothing'
   volume:
     type: 'yasb.volume.VolumeWidget'
     options:
@@ -182,6 +182,9 @@ widgets:
     options:
       label: '<span>{icon}</span>{percent}'
       label_alt: '<span>{icon}</span>{percent} | {power} | {time_remaining}'
+      callbacks:
+        on_left: 'do_nothing'
+        on_right: 'toggle_label'
     charging_options:
       icon_format: '{charging_icon}'
       blink_charging_icon: true
